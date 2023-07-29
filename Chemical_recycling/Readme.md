@@ -1,1 +1,1 @@
-
+Community involvement in chemical recycling can play a significant role in promoting and supporting sustainable waste management practices. This blog website can educate people about the chemical recycling and encourage them in seprating plastic waste. 
