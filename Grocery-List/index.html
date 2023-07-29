@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Grocery Todo List</h1>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </header>
+  <main>
+    <div class="add-item">
+      <input type="text" id="groceryItem" placeholder="Add grocery item">
+      <select id="prioritySelect">
+        <option value="high">High Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="low">Low Priority</option>
+      </select>
+      <button id="addItemBtn">Add Item</button>
+    </div>
+    <ul id="groceryList"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
