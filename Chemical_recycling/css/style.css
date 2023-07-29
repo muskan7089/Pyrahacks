@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #336699;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.expand-button {
+    background-color: #336699;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.expand-button:hover {
+    background-color: #295580;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: block;
+}
+ul {
+    list-style-type: disc; /* Bullet point style */
+    padding-left: 20px; /* Indentation from the left */
+  }
+  
+  li {
+    color: #333; /* Text color */
+    margin-bottom: 8px; /* Spacing between list items */
+    text-align: justify;
+  }
+  
+  /* Styling ordered list (ol) and its list items (li) */
+  ol {
+    list-style-type: decimal; /* Numbering style */
+    padding-left: 30px; /* Indentation from the left */
+  }
+  
+  li {
+    color: #666; /* Text color */
+    margin-bottom: 12px; /* Spacing between list items */
+  }
