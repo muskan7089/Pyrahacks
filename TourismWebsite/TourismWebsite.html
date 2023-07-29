@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism Website</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel & Tourism</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Explore the World with Us</h1>
+            <p class="lead">Discover amazing destinations and unforgettable experiences</p>
+            <a href="#tours" class="btn btn-primary btn-lg">View Tours</a>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Calgary.jpg" alt="Calgary" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Calgary</h3>
+                            <p class="card-text">Explore the beauty of Calgary!</p>
+                            <button id="displayTextButton">Learn More</button>
+                            <p id="displayText" style="display: none;">Text will be displayed here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Tabriz.jpg" alt="Tabriz" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Tabriz</h3>
+                            <p class="card-text">Explore the beauty of Tabriz!</p>
+                            <button id="displayTextButton2">Learn More</button>
+                            <p id="displayText2" style="display: none;">Text will be displayed here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Prague.jpg" alt="Prague" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Prague</h3>
+                            <p class="card-text">Explore the beauty of Prague!</p>
+                            <button id="displayTextButton3">Learn More</button>
+                            <p id="displayText3" style="display: none;">Text will be displayed here.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more destination cards here -->
+            </div>
+        </div>
+    </section>
+    <script>
+        // JavaScript code
+        const displayTextButton = document.getElementById('displayTextButton');
+        const displayTextButton2 = document.getElementById('displayTextButton2');
+        const displayTextButton3 = document.getElementById('displayTextButton3');
+        const displayText = document.getElementById('displayText');
+        const displayText2 = document.getElementById('displayText2');
+        const displayText3 = document.getElementById('displayText3');
+
+        displayTextButton.addEventListener('click', function() {
+            displayText.style.display = 'block';
+            displayText.innerHTML = 'Calgary is a vibrant tourist city nestled in the Canadian province of Alberta. Known for its friendly atmosphere and stunning natural landscapes, it offers a mix of urban sophistication and outdoor adventure. Visitors can explore the iconic Calgary Tower, enjoy cultural events at the Arts Commons, and venture into the nearby Rocky Mountains for hiking, skiing, and breathtaking scenery.';
+            
+        });
+        displayTextButton2.addEventListener('click', function() {
+            displayText2.style.display = 'block';
+            displayText2.innerHTML = 'Tabriz is a captivating tourist city located in Northwestern Iran. Renowned for its rich history and culture, it boasts numerous historical sites, including the UNESCO-listed Tabriz Bazaar and the Blue Mosque. With its beautiful gardens, traditional crafts, and warm hospitality, Tabriz offers a delightful blend of ancient charm and modern allure for visitors to explore and enjoy.';
+        });
+        displayTextButton3.addEventListener('click', function() {
+            displayText3.style.display = 'block';
+            displayText3.innerHTML = 'Prague, the enchanting capital of the Czech Republic, is a fairy-tale-like tourist city with a rich history and stunning architecture. Its medieval Old Town, Charles Bridge, and Prague Castle are iconic landmarks that transport visitors back in time. With a vibrant arts scene, charming cafes, and picturesque river views, Prague is a must-visit destination for travelers.';
+        });
+    </script>
+    
+    <!-- Tours Section -->
+    <section id="tours" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Tours</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Canada1.jpg" alt="Canada" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Canada</h3>
+                            <p class="card-text">Embark on an unforgettable journey with our Canada package.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Iran.jpg" alt="Iran" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Iran</h3>
+                            <p class="card-text">Embark on an unforgettable journey with our Iran package.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Czech-Republic.jpg" alt="Czech Republic" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Czech Republic</h3>
+                            <p class="card-text">Embark on an unforgettable journey with our Czech Republic package.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more tour cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Travel and Tourism Website. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script> <!-- Your custom JavaScript -->
+</body>
+</html>

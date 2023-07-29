@@ -1,0 +1,171 @@
+/* Custom CSS for the Travel and Tourism website */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Header Section */
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#e68a00;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color:#0a0803;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+header .btn:hover {
+    background-color: #e68a00;
+}
+
+/* Destinations Section */
+section#destinations {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#destinations h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.destination {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.display4 {
+   color:#e68a00 
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Tours Section */
+section#tours {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+section#tours h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.tour {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tour img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+section#contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form .btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form .btn:hover {
+    background-color: #e68a00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
