@@ -12,8 +12,8 @@ The Budgeting App is a simple and user-friendly web application designed to help
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/budgeting-app.git`
-2. Navigate to the project directory: `cd budgeting-app`
+1. Clone the repository
+2. Navigate to the project directory
 3. Open `index.html` in your web browser.
 
 ## Technologies Used
