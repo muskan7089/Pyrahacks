@@ -24,7 +24,7 @@ The Blood Donation Website is a web application that allows users to track their
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/blood-donation-website.git`
-2. Navigate to the project directory: `cd blood-donation-website`
+1. Clone the repository
+2. Navigate to the project directory
 3. Open `index.html` in your web browser to access the website.
 
