@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blood Donation Tracker</h1>
+  </header>
+  <main>
+    <section class="donation-form">
+      <h2>Enter New Donation</h2>
+      <form id="donationForm">
+        <label for="donorName">Donor Name:</label>
+        <input type="text" id="donorName" required>
+        <label for="donationDate">Donation Date:</label>
+        <input type="date" id="donationDate" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="blood-bank-locator">
+        <h2>Blood Bank Locator</h2>
+        <ul id="bloodBankList"></ul>
+    </section>     
+    <section class="personalized-tips">
+        <h2>Calendar</h2>
+        <p id="donationTip"></p>
+    </section> 
+    <section class="donation-history">
+      <h2>Donation History</h2>
+      <table id="donationTable">
+        <thead>
+          <tr>
+            <th>Donor Name</th>
+            <th>Donation Date</th>
+            <th>Next Donation Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Donor information will be dynamically populated here -->
+        </tbody>
+      </table>
+    </section>
+    <section class="donation-eligibility">
+      <button id="openEligibilityQuiz">Check Eligibility</button>
+    </section>
+    <section class="healthy-donation-info">
+        <h2>Healthy Blood Donation Tips</h2>
+        <p>
+          Donating blood is a selfless act that helps save lives. To ensure a successful and safe donation,
+          follow these healthy blood donation tips:
+        </p>
+        <ul>
+          <li>Stay hydrated by drinking plenty of water before and after donation.</li>
+          <li>Eat a healthy meal before donation, including foods rich in iron.</li>
+          <li>Get a good night's sleep before your donation appointment.</li>
+          <li>Avoid strenuous physical activity right after donation.</li>
+          <li>Rest for a while after donation and have a light snack.</li>
+          <li>Avoid smoking or consuming alcohol for a few hours after donation.</li>
+          <li>Follow any post-donation instructions provided by the blood bank.</li>
+        </ul>
+      </section>
+      
+  </main>
+  <!-- Modal for the Eligibility Quiz -->
+  <div id="eligibilityModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Donation Eligibility Quiz</h2>
+      <form id="eligibilityForm">
+        <!-- Add eligibility questions here as described earlier -->
+        <!-- For example, you can use radio buttons, checkboxes, or dropdowns for user responses -->
+        <label for="age">Are you 18 years old or older?</label>
+        <input type="radio" name="age" value="yes" required> Yes
+        <input type="radio" name="age" value="no"> No
+
+        <!-- Add more eligibility questions here based on scientific research -->
+
+        <button type="submit">Check Eligibility</button>
+      </form>
+      <div id="eligibilityResult"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
