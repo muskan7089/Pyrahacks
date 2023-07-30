@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Care Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elderly Care Network</h1>
+    </header>
+
+    <main>
+        <!-- Elderly Registration Section -->
+        <section class="registration-section">
+            <h2>Elderly Registration</h2>
+            <form id="elderlyProfileForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Availability:</label>
+                    <div class="availability-checkboxes">
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Sunday">
+                            Sunday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Monday">
+                            Monday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Tuesday">
+                            Tuesday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Wednesday">
+                            Wednesday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Thursday">
+                            Thursday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Friday">
+                            Friday
+                        </label>
+                        <label>
+                            <input type="checkbox" name="availability[]" value="Saturday">
+                            Saturday
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferences">Preferences:</label>
+                    <select id="preferences" required>
+                        <option value="">Select preference</option>
+                        <option value="Running errands">Running errands</option>
+                        <option value="Companionship">Companionship</option>
+                        <!-- Add more preferences here -->
+                    </select>
+                </div>
+                
+                <button type="submit">Register as Elderly</button>
+            </form>
+        </section>
+  <!-- Elderly Registration Section -->
+  <section class="registration-section">
+    <h2>Volunteer Registration</h2>
+    <form id="volunteerProfileForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Availability:</label>
+            <div class="availability-checkboxes">
+                <label>
+                    <input type="checkbox" name="availability[]" value="Sunday">
+                    Sunday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Monday">
+                    Monday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Tuesday">
+                    Tuesday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Wednesday">
+                    Wednesday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Thursday">
+                    Thursday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Friday">
+                    Friday
+                </label>
+                <label>
+                    <input type="checkbox" name="availability[]" value="Saturday">
+                    Saturday
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="preferences">Preferences:</label>
+            <select id="preferences" required>
+                <option value="">Select preference</option>
+                <option value="Running errands">Running errands</option>
+                <option value="Companionship">Companionship</option>
+                <!-- Add more preferences here -->
+            </select>
+        </div>
+        
+        <button type="submit">Register as Volunteer</button>
+    </form>
+</section>
+        <!-- Matched Volunteers Section -->
+        <section class="matched-volunteers">
+            <h2>Matched Volunteers</h2>
+            <div id="matchedVolunteersList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Elderly Care Network. All rights reserved.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
