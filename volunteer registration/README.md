@@ -1,6 +1,6 @@
 **Volunteer Sign-up Application**
 
-![Volunteer Sign-up Application](https://your-image-url.com)
+
 
 **Table of Contents**
 1. [Introduction](#introduction)
